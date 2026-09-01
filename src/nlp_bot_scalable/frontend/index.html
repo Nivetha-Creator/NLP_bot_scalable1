@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NLP Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+                🤖 NLP Chatbot
+            </div>
+
+            <button class="new-chat" onclick="location.reload()">
+                + New Chat
+            </button>
+
+            <div class="sidebar-info">
+                <p>AI-powered NLP assistant</p>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div class="header-left">
+
+                    <div class="header-avatar">
+                        🤖
+                    </div>
+
+                    <div>
+                        <h2>NLP Chatbot</h2>
+
+                        <span>
+                            <i></i>
+                            Online
+                        </span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- CHAT -->
+            <section id="chat-box" class="chat-box">
+
+                <!-- Welcome -->
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        🤖
+                    </div>
+
+                    <h1>How can I help you?</h1>
+
+                    <p>
+                        Start a conversation with your NLP chatbot.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- INPUT -->
+            <div class="input-wrapper">
+
+                <div class="input-box">
+
+                    <button class="plus">
+                        +
+                    </button>
+
+                    <input
+                        type="text"
+                        id="message"
+                        placeholder="Message NLP Chatbot..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="send-button"
+                        class="send"
+                        onclick="sendMessage()"
+                    >
+                        ↑
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    NLP Chatbot can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
