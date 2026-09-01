@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8001";
+const API_URL = "https://nlp-bot-scalable1-1.onrender.com";
 
 const input = document.getElementById("message");
 const chatBox = document.getElementById("chat-box");
