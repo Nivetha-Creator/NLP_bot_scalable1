@@ -4,8 +4,8 @@ from pathlib import Path
 
 import numpy as np
 
-from nlp_bot_scalable.nlp.model_loader import load_chatbot
-from nlp_bot_scalable.nlp.preprocessing import bag_of_words
+from src.nlp_bot_scalable.nlp.model_loader import load_chatbot
+from src.nlp_bot_scalable.nlp.preprocessing import bag_of_words
 
 
 class ChatbotPredictor:
