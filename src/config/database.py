@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from src.config.settings import settings
+from src.nlp_bot_scalable.database.models import Base
 
 
 # Find project root
@@ -13,7 +14,7 @@ BASE_DIR = Path(__file__).resolve().parents[2]
 DATABASE_FILE = BASE_DIR / "chatbot.db"
 
 # Create database URL
-DATABASE_URL = f"sqlite:///{DATABASE_FILE.as_posix()}"
+DATABASE_URL = f"sqlite:///{DATABASE_FILE}"
 
 # Create database engine
 engine = create_engine(
@@ -27,3 +28,6 @@ SessionLocal = sessionmaker(
     autoflush=False,
     bind=engine
 )
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
