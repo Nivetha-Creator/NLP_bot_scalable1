@@ -1,4 +1,4 @@
-const API_URL = "https://nlp-bot-scalable1-1.onrender.com";
+const API_URL = "https://nlp-bot-scalable1-b.onrender.com";
 
 const input = document.getElementById("message");
 const chatBox = document.getElementById("chat-box");
